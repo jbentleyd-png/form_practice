@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Change Your Life</title>
+    <link rel="icon" type="image/png" href="icons8-100-64.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -12,18 +13,19 @@
       alt=""
     />
     <div id="right-side">
-      <h2>
-        People have the chance to change their lives. They just need the
-        courage.
-      </h2>
+      <h1>One hundred days of code isn't for everybody.</h1>
       <h2>Will <em>you</em> make the leap?</h2>
       <div id="form-section">
         <form action="">
-          <p>fill this out, and we'll be in touch</p>
-          <input type="text" />
+          <p class="call-to-action">Fill this out, and we'll be in touch.</p>
+          <label for="name">Name:</label>
+          <input type="text" id="name" />
+          <label for="stack">Desired Tech Stack:</label>
+          <input type="text" id="stack" />
         </form>
       </div>
-      <input type="button" value="Submit Form" class="submit-button" />
+      <input type="button" value="Submit" class="submit-button" />
+      <p>Already have an account? <a href="">Log in</a></p>
     </div>
   </body>
 </html>

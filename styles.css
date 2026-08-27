@@ -1,19 +1,51 @@
 :root {
   background-color: black;
   color: rgb(34, 203, 228);
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
 
 body {
   display: flex;
-  justify-content: space-around;
 }
 
 #right-side {
+  margin-left: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+#form-section {
+  background-color: rgb(13, 51, 83);
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  color: rgb(253, 253, 255);
+}
+
+.call-to-action {
+  font-size: large;
+}
+
 .submit-button {
   max-width: max(50px, 6rem);
+  margin-top: 20px;
+  font-size: larger;
+}
+
+a {
+  color: rgb(227, 227, 227);
+  text-decoration: none;
 }
