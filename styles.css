@@ -1,4 +1,19 @@
 :root {
   background-color: black;
-  color: greenyellow;
+  color: rgb(34, 203, 228);
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+}
+
+#right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.submit-button {
+  max-width: max(50px, 6rem);
 }
