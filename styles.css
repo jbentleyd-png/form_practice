@@ -62,5 +62,8 @@ input {
 
 #years-of-experience {
   width: 25px;
-  margin-right: 50px;
+}
+
+.password-row {
+  margin-top: 15px;
 }
