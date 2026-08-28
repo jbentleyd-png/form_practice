@@ -57,7 +57,9 @@ a {
 
 input {
   margin-right: 10px;
-  margin-left: 5px;
+}
+label {
+  margin-right: 5px;
 }
 
 #years-of-experience {
