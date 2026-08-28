@@ -20,19 +20,24 @@ body {
 }
 
 #right-side {
-  margin-left: 200px;
+  margin-left: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-#form-section {
+form {
   background-color: rgb(13, 51, 83);
   padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 20px;
   border-radius: 5px;
   color: rgb(253, 253, 255);
+}
+
+.form-row {
+  display: flex;
+  margin: 10px;
 }
 
 .call-to-action {
@@ -48,4 +53,14 @@ body {
 a {
   color: rgb(227, 227, 227);
   text-decoration: none;
+}
+
+input {
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+#years-of-experience {
+  width: 25px;
+  margin-right: 50px;
 }
