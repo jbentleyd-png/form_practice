@@ -20,43 +20,46 @@
         <p class="call-to-action">Fill this out, and we'll be in touch.</p>
 
         <div class="form-row">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" placeholder="James Dean" />
-          <label for="stack">Desired Tech Stack*:</label>
-          <select id="stack" name="stack" placeholder="Ruby on Rails" required>
-            <option value="Ruby on Rails" selected>Ruby on Rails</option>
-            <option value="Node.js">Node.js</option>
-            <option value="Django">Django</option>
-          </select>
+          <div class="input-pair">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="James Dean" />
+          </div>
+          <div class="input-pair">
+            <label for="stack">Desired Tech Stack*:</label>
+            <select
+              id="stack"
+              name="stack"
+              placeholder="Ruby on Rails"
+              required
+            >
+              <option value="Ruby on Rails" selected>Ruby on Rails</option>
+              <option value="Node.js">Node.js</option>
+              <option value="Django">Django</option>
+            </select>
+          </div>
         </div>
         <div class="form-row">
-          <label for="years-of-experience">Years of Experience:</label>
-          <input
-            type="number"
-            id="years-of-experience"
-            name="years-of-experience"
-            placeholder="0"
-            min="0"
-            max="67"
-          />
-          <label for="email">Email*:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="fire_fox_dev@gmail.com"
-            required
-          />
-        </div>
-        <div class="form-row password-row">
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" />
-          <label for="confirm-password">Confirm Password:</label>
-          <input
-            type="password"
-            id="confirm-password"
-            name="confirm-password"
-          />
+          <div class="input-pair">
+            <label for="years-of-experience">Years of Experience:</label>
+            <input
+              type="number"
+              id="years-of-experience"
+              name="years-of-experience"
+              placeholder="0"
+              min="0"
+              max="67"
+            />
+          </div>
+          <div class="input-pair">
+            <label for="email">Email*:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="fire_fox_dev@gmail.com"
+              required
+            />
+          </div>
         </div>
       </form>
       <button type="submit" class="submit-button">Submit</button>

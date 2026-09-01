@@ -17,13 +17,18 @@
 
 body {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
 }
 
 #right-side {
-  margin-left: 150px;
+  margin-left: 10vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-right: 15px;
 }
 
 form {
@@ -33,11 +38,16 @@ form {
   padding-bottom: 20px;
   border-radius: 5px;
   color: rgb(253, 253, 255);
+  width: clamp(125px, 45vw, 35vw);
 }
 
 .form-row {
   display: flex;
-  margin: 10px;
+  flex-wrap: wrap;
+}
+
+.input-pair {
+  margin: 5px;
 }
 
 .call-to-action {
@@ -68,4 +78,9 @@ label {
 
 .password-row {
   margin-top: 15px;
+}
+
+img {
+  width: clamp(350px, 45vw, 805px);
+  max-height: 100vh;
 }
