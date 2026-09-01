@@ -1,6 +1,25 @@
 :root {
-  background-color: black;
-  color: rgb(34, 203, 228);
+  --bg-color: black;
+  --theme-color: rgb(34, 203, 228);
+  --link-color: rgb(227, 227, 227);
+  --button-color: white;
+  --button-text: black;
+}
+
+:root.light {
+  --bg-color: whitesmoke;
+  --theme-color: rgb(0, 70, 81);
+  --link-color: rgb(178, 44, 17);
+  --button-color: rgb(94, 2, 97);
+  --button-text: white;
+}
+
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
   font-family:
     system-ui,
     -apple-system,
@@ -13,14 +32,8 @@
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
-}
-
-body {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--theme-color);
 }
 
 #right-side {
@@ -54,14 +67,8 @@ form {
   font-size: large;
 }
 
-.submit-button {
-  max-width: max(50px, 6rem);
-  margin-top: 20px;
-  font-size: larger;
-}
-
 a {
-  color: rgb(227, 227, 227);
+  color: var(--link-color);
   text-decoration: none;
 }
 
@@ -83,4 +90,24 @@ label {
 img {
   width: clamp(350px, 45vw, 805px);
   max-height: 100vh;
+}
+
+[type="button"] {
+  position: absolute;
+  font-size: larger;
+  top: 25px;
+  right: 25px;
+  width: 45px;
+  height: 45px;
+  background-color: var(--bg-color);
+  border-radius: 5px;
+}
+
+[type="submit"] {
+  background-color: var(--button-color);
+  color: var(--button-text);
+  max-width: max(50px, 6rem);
+  margin-top: 20px;
+  font-size: larger;
+  border-radius: 5px;
 }

@@ -2,6 +2,8 @@
 
 Learning to create a form with HTML and CSS.
 
-<a target="_blank" href="https://icons8.com/icon/118292/100">100</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+I used JS and CSS cutsom properties to add a dark and light mode.
+
+I also used clamp() to make window resizing smoother.
 
 100 icon by Icons8 https://icons8.com/icon/118292/100
