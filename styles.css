@@ -39,6 +39,14 @@ body {
   }
 }
 
+/* hoping to center button content on safari */
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 #right-side {
   margin-left: 10vw;
   display: flex;
