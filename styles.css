@@ -34,6 +34,9 @@ body {
     sans-serif;
   background-color: var(--bg-color);
   color: var(--theme-color);
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 }
 
 #right-side {
@@ -41,7 +44,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 15px;
+  margin-right: 40px;
+
+  @media (max-width: 800px) {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 50px;
+  }
 }
 
 form {
@@ -51,7 +60,7 @@ form {
   padding-bottom: 20px;
   border-radius: 5px;
   color: rgb(253, 253, 255);
-  width: clamp(125px, 45vw, 35vw);
+  width: clamp(45vw, 35vw);
 }
 
 .form-row {
@@ -88,8 +97,11 @@ label {
 }
 
 img {
-  width: clamp(350px, 45vw, 760px);
+  width: clamp(500px, 45vw, 760px);
   max-height: 100vh;
+  @media (max-width: 600px) {
+    width: 100vw;
+  }
 }
 
 [type="button"] {
